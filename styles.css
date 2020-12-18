@@ -1,0 +1,314 @@
+body {
+    font-family: 'Krona One', sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    padding: 0;
+    margin: 0;
+    background-color: hsl(351, 11%, 65%);
+    display: flex;
+    flex-direction: column;
+    color: #002133;
+    
+}
+/*Global - applied to components through the whole site*/
+.container {
+    margin: auto;
+    width: 90%;
+}
+ul {
+    margin: 0;
+    padding: 0;
+}
+.styled{
+    padding: 15px;
+    background: #145464;
+    color: #beb1b3;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    padding-left: 15px;
+}
+.button1{
+    border: 0;
+    background: #002133;
+    color: #987336;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 50px;
+    font: 18px;
+    font-weight: bolder;
+    width: 30%;
+    border-radius: 5px;
+}
+
+.button3{
+    border: 0;
+    background: #002133;
+    color: #987336;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 50px;
+    font: 18px;
+    font-weight: bolder;
+    width: 30%;
+    border-radius: 5px;
+}
+.button1:hover, .button2:hover, .button3:hover{    
+    border: 1px solid #beb1b3;
+}
+
+/*header*/
+
+header {
+    background-color: #002133;
+    min-height: 75px;
+    padding-top: 10px;
+    border-bottom: #987336 solid 3px;
+}
+header a {
+    text-decoration: none;
+    color: #B79B9F;
+    font-weight: bolder;
+    font-size: 16px;
+}
+header li {
+    display: inline;
+    padding: 0 20px;
+    float: left;
+}
+header #brand {
+    float: left; 
+}
+header #brand img{
+        width: auto;
+        max-height: 70px;
+        margin-top:0;
+        padding-top: 0;
+}
+header nav {
+    float: right;
+    margin-top: 20px;
+}
+header .current a {
+    color:#145464;
+}
+header a:hover {
+    font-size: 17px;
+}
+
+/*showcase*/
+#showcase {
+    background: url('img/gabrielle-henderson-qYEMteh9jOg-unsplash.jpg') no-repeat 0 -300px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    min-height: 350px;
+    margin: 0;
+    text-align: center;
+    color: #002133;
+    -webkit-text-stroke: 0.3px #beb1b3;
+}
+#showcase .container{
+    padding-top: 200px;
+}
+#showcase .container h1{
+   margin-top: 0px;
+   font-size: 20px;
+}
+
+/*disclaimers*/
+
+#disclaimers {
+    margin-top: 20px;
+}
+#disclaimers .disclaimer{
+    float: left;
+    text-align: center;
+    width: 30%;
+    padding: 10px;
+    font-size: smaller;
+}
+
+/*footer*/
+footer {
+    background-color: #002133;
+    color: #987336;
+    padding-bottom: 15px;
+    max-height: 30px;
+    text-align: center;
+}
+/*aside*/
+aside#message {
+    float: right;
+    width: 30%; 
+    margin-top: 10px;
+}
+   
+aside#message h3, aside#cart h3{
+    font-size: medium;
+    color: #002133;
+}
+.entry{
+    margin-bottom: 5px;
+}
+aside#message .request input, aside#message .request textarea{
+    padding: 5px;
+    width: 90%;
+}
+aside#cart{
+    font-style: italic;
+    padding-left: 20px;
+   
+}
+
+aside#cart table {
+    text-align: center;
+}
+
+aside#cart th, aside#cart td{
+    width: 25%;
+}
+
+aside#cart th {
+    color: #987336;  
+}
+
+.button2 {
+    border: 0;
+    background: #002133;
+    color: #987336;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font: 18px;
+    font-weight: bolder;
+    width: 50%;
+    height: 30px;
+    border-radius: 50px;
+}
+
+.total_price{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: #987336;
+}
+.quantity_number{
+    max-width: 50px;
+}
+ /*main section of contacts*/
+ .contact_details{
+     float: left;
+     width: 65%;
+     color: #002133;
+ }
+
+ /*product boxes*/
+ .products {
+  float: left;
+  width: 65%;
+ }
+ .products-box  {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px 20px;
+  justify-self: center;  
+ }
+ .product-box__item{
+    flex: 0.6;
+    justify-content: center;
+    margin-left: 15px;
+ }
+ .product-box__img {
+     position: relative; /*adjust heighth of labels*/
+ }
+ .img-fluid {
+     max-height: 250px;
+ }
+ .quantity input {
+    padding: 5px;
+    width: 20%;
+ }
+ .main {
+    display: flex;
+ }
+ .product-box__title{
+    max-width: 250px;
+    height: 40px;
+    padding-left: 5px;
+
+ }
+
+ /*media*/
+ 
+ @media(max-width: 768px){
+    header #brand, header nav, header nav li {
+        float: none;
+        width: 100%;
+        text-align: center; 
+    }
+    header nav{
+        padding-bottom: 10px;
+    }
+    #showcase .container{
+        padding-top: 100px;
+    }
+    #disclaimers .disclaimer{
+        float: none;
+    }
+    .container{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center; 
+    }
+    footer {
+        font-size: smaller;
+    }
+    .contact_details{
+        float: none;
+        width: 100%;
+    }
+    aside#message{
+        float: none;
+        width: 100%;
+    }
+    .button1{
+        display: block;
+        width: 90%;
+        justify-self: center;
+    }
+    .products-box {
+        margin-top: 350px;
+    } 
+    aside#cart{
+        left: 10px;
+        right: 10px;
+        width: 100%;
+        font-size: small;  
+    }  
+       
+ }
+
+ @media(max-width: 1065px){
+    aside#cart {
+        position: sticky; 
+        top: 0;
+        left: 0;
+        right: 10px;
+        width: 100%;
+        margin-top: 10px;
+        z-index: +2;
+        align-self: flex-start; 
+    } 
+ }
+
+ @media(min-width: 1066px) {
+    aside#cart {
+        position: sticky; 
+        top: 0;
+        width: 30%;
+        margin-top: 10px;
+        z-index: +2;
+        align-self: flex-start; 
+    } 
+ }
